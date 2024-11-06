@@ -2,6 +2,12 @@
 
 This project provides Docker images to periodically back up a PostgreSQL database to Alibaba Cloud Object Storage Service (OSS).
 
+## Features
+
+- Minimal image size (15MB)
+- Low memory usage (less than 1MB in idle state)
+- Support custom scheduling interval time (with cron format)
+
 ## Usage
 
 Create a `docker-compose.yml` file with the following content:
