@@ -7,7 +7,7 @@ services:
       POSTGRES_DB: dbname
 
   backup:
-    image: isaced/postgres-backup-oss
+    image: isaced/postgres-backup-oss:latest
     depends_on:
       - postgres
     environment:
