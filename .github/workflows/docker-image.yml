@@ -24,3 +24,6 @@ jobs:
         with:
           push: true
           tags: isaced/postgres-backup-oss:latest
+          platforms: |
+            linux/amd64
+            linux/arm64
