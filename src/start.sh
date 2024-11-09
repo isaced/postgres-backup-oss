@@ -1,5 +1,5 @@
 # Default schedule
-SCHEDULE=${SCHEDULE:-"* * * * *"}
+SCHEDULE=${SCHEDULE:-"0 0 * * *"}
 
 # Set cron to run (crontab)
 echo "$SCHEDULE /backup.sh" | crontab -
