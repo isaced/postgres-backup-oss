@@ -28,7 +28,7 @@ services:
     depends_on:
       - postgres
     environment:
-      SCHEDULE: '* * * * *'         # optional, default '* * * * *'
+      SCHEDULE: '0 0 * * *'         # optional, default '0 0 * * *' (daily)
       POSTGRES_HOST: postgres
       POSTGRES_PORT: 5432           # optional, default 5432
       POSTGRES_DATABASE: dbname
