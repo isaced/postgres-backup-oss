@@ -24,12 +24,12 @@ fi
 echo "Creating backup of $POSTGRES_DATABASE database..."
 
 # Create backup
-pg_dump --format=custom \
+pg_dump \
   -h $POSTGRES_HOST \
   -p $POSTGRES_PORT \
   -U $POSTGRES_USER \
-  -d $POSTGRES_DATABASE \
-  >${BACKUP_FILE}
+  -d $POSTGRES_DATABASE |
+  gzip >${BACKUP_FILE}
 
 echo "Database export success! -> ${BACKUP_FILE}"
 
