@@ -41,3 +41,9 @@ services:
 ```
 
 Then run `docker-compose up -d` to start the backup service.
+
+## OSS Configuration
+
+You need to create an OSS bucket and an AccessKey pair in the [Alibaba Cloud console](https://home-intl.console.aliyun.com/). Then fill in the environment variables in the `docker-compose.yml` file.
+
+About more OSS configuration, please refer to：[Configure ossutil - Environment variables](https://www.alibabacloud.com/help/en/oss/developer-reference/configure-ossutil2#8d24444ae2hnb), just add to environment to take effect.
