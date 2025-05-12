@@ -2,6 +2,8 @@
 
 [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/isaced/postgres-backup-oss)
 
+English | [简体中文](README.zh-CN.md)
+
 This project provides Docker images to periodically back up a PostgreSQL database to Alibaba Cloud Object Storage Service (OSS).
 
 ## Features
